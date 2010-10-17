@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>Podcast Syndication</name>
+	<package>podcastSyndication</package>
+	<loadPriority>5</loadPriority>
+	<version>0.1.1</version>
+	<provider>Steve Good</provider>
+	<providerURL>http://stevegood.org</providerURL>
+	<category>Syndication</category>
+	<settings />
+	<EventHandlers>
+		<eventHandler event="onAdminNavigationRender" component="eventHandlers.AdminEventHandler" persist="true" />
+		<eventHandler event="onGlobalRequestStart" component="eventHandlers.MainEventHandler" persist="true" />
+		<eventHandler event="onSiteRequestStart" component="eventHandlers.MainEventHandler" persist="true" />
+	</EventHandlers>
+	<DisplayObjects location="global">
+		<displayObject name="New Show Player" displayobjectfile="displayObjects/dsp_newShowPlayer.cfm" />
+		<displayObject name="Recent Shows" displayobjectfile="displayObjects/dsp_recentShows.cfm" />
+		<displayObject name="Subscribe to Podcast" displayobjectfile="displayObjects/dsp_subscribeToPodcast.cfm" />
+		<displayObject name="Podcast Syndication RSS" displayobjectfile="displayObjects/dsp_syndicationRSS.cfm" />
+	</DisplayObjects>
+</plugin>
