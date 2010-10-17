@@ -5,7 +5,8 @@
 <cfinclude template="plugin/config.cfm" />
 
 <cfsilent>
-	<!--- TODO: Implement code... --->
+	<cfset application.contentRenderer.loadJSLib() /><!--- make sure we always have jQuery --->
+	<cfset request.pluginConfig.addToHTMLHeadQueue('htmlHead/hq_admin.cfm') />
 </cfsilent>
 
 <cfsavecontent variable="variables.body">

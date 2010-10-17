@@ -3,7 +3,7 @@
 	<name>Podcast Syndication</name>
 	<package>podcastSyndication</package>
 	<loadPriority>5</loadPriority>
-	<version>0.1.2</version>
+	<version>0.1.3</version>
 	<provider>Steve Good</provider>
 	<providerURL>http://stevegood.org</providerURL>
 	<category>Syndication</category>
