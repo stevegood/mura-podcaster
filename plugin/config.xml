@@ -3,13 +3,13 @@
 	<name>Podcast Syndication</name>
 	<package>podcastSyndication</package>
 	<loadPriority>5</loadPriority>
-	<version>0.1.1</version>
+	<version>0.1.2</version>
 	<provider>Steve Good</provider>
 	<providerURL>http://stevegood.org</providerURL>
 	<category>Syndication</category>
 	<settings />
 	<EventHandlers>
-		<eventHandler event="onAdminNavigationRender" component="eventHandlers.AdminEventHandler" persist="true" />
+		<eventHandler event="onAdminModuleNav" component="eventHandlers.AdminEventHandler" persist="true" />
 		<eventHandler event="onGlobalRequestStart" component="eventHandlers.MainEventHandler" persist="true" />
 		<eventHandler event="onSiteRequestStart" component="eventHandlers.MainEventHandler" persist="true" />
 	</EventHandlers>

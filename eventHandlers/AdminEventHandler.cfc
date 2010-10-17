@@ -1,8 +1,8 @@
 <cfcomponent extends="mura.plugin.pluginGenericEventHandler">
 
-	<cffunction name="onAdminNavigationRender" access="public" returntype="void" output="false">
+	<cffunction name="onAdminModuleNav">
 		<cfargument name="event" />
-		<!--- TODO: Auto-Generated method stub --->
+		<cfreturn '<li><a href="#variables.configBean.getContext()#/plugins/#variables.pluginConfig.getDirectory()#/">Podcast Syndication</a></li>' />
 	</cffunction>
 
 </cfcomponent>
